@@ -260,7 +260,229 @@ user111 = {
     age: 25
 };
 
-console.log(user111.name);
-console.log(user111.age);
-console.log(user222.name);
-console.log(user222.age);
+// console.log(user111.name);
+// console.log(user111.age);
+// console.log(user222.name);
+// console.log(user222.age);
+
+
+
+// ************** practice of array & their method ******************
+
+
+let fruits = ["apple", "banana", "mango"]
+
+// fruits.push("orange")   // add in the end 
+// console.log(fruits)
+
+
+// fruits.pop();        // remove in the end
+// console.log(fruits)
+
+
+// fruits.unshift("grapes")      // add in the beginning
+// console.log(fruits)
+
+
+// fruits.shift()         // remove in the beginning of the array 
+// console.log(fruits)
+
+
+// console.log(fruits.includes("apple"))       // it is check the element is available or not in array
+
+
+// console.log(fruits.indexOf("mango"))     // it is check the index of array like 0 position and 2 position and others
+
+
+// console.log(fruits.indexOf("Orange")); // -1 because orange is not available in the array so -1 is print
+
+
+let arrr1 = ["s", "u", "b", "h", "a", "n"]
+// console.log(arrr1.join("-"))             // it convert an array to a string
+
+
+// console.log(typeof arrr1.join("-"))           // also check the type of because the type of array is object 
+
+let arrr2 = ["10", "20", "30", "40", "50"]
+
+// console.log(arrr2.slice(1,4))   // slice is not change the original array value    " does not modify the original array "
+// console.log(arrr2)
+
+
+// console.log(arrr2.splice(0,2))   // splice is change the array original value  "its modify the original array"
+// console.log(arrr2)
+
+
+
+let aaa = [1,2,3]
+let bbb = [4,5,6]
+
+//  let cc = aaa.concat(bbb)   // concat    its combine 2 or more than 2 array in one array
+
+// console.log(cc)
+
+//  console.log(aaa.concat(bbb))
+
+// console.log([...aaa, ...bbb])     // spread     array ko spread karna     
+
+
+let sss = [1,2,[3,4],[5,6,[13,14,15]],[7,8,[9,10,[11,12]]]];
+
+// console.log(sss.flat(Infinity))  // flatten the nested array using infinity
+
+// console.log(Array.isArray([1,2,3,4]))    // it is check that given number and anythings else is array or not
+
+// console.log(Array.isArray("subhan"))   // it is check that given number and anythings else is array or not
+
+
+// console.log(Array.from("KHAN"))     // its convert into an array like = ["k", "h", "a", "n"]
+
+
+let kkk = Array.of(10,20,30)       // its converts in a array 
+// console.log(kkk)
+
+
+
+// *******************  Practice  Questions **************
+
+
+
+let arr = [10, 20, 30];
+
+arr.push(40);
+arr.pop();
+arr.unshift(5);
+arr.shift();
+
+// console.log(arr);
+
+
+
+let arrrr1 = ["HTML", "CSS", "JavaScript", "React"];
+
+// console.log(arrrr1.includes("JavaScript"));
+// console.log(arrrr1.indexOf("React"));
+// console.log(arrrr1.indexOf("Node"));
+
+let ar = [10, 20, 30, 40, 50];
+
+let results = ar.slice(1, 4);
+
+// console.log(results);
+// console.log(ar);
+
+
+let arr0 = [10, 20, 30, 40, 50];
+
+let resultt = arr0.splice(1, 2);
+
+// console.log(resultt);
+// console.log(arr0);
+
+
+let aaaa = [1, 2, 3];
+let bbbb = [4, 5, 6];
+
+let resuult = [...aaaa, ...bbbb];
+
+// console.log(resuult);
+
+
+
+let aarr = [1, [2, 3], [4, [5, 6]]];
+
+// console.log(aarr.flat());
+// console.log(aarr.flat(2));
+
+
+// console.log(Array.from("JavaScript"));
+
+
+
+let nums = [1, 2, 3, 4, 5];
+
+let reesult = nums.map((nums) => nums * 3); 
+
+// map() har element par operation karta hai aur new array return karta hai.
+
+let tt = nums.map((nums)=>nums *10 )
+let uu = nums.map((nums)=> nums +5)
+
+// console.log(reesult);
+// console.log(tt);
+// console.log(uu)
+
+
+
+
+
+
+let nuuums = [10, 15, 20, 25, 30];
+
+let rresult = nuuums.filter((nuuum) => nuuum > 20);
+
+//filter() sirf un elements ko rakhta hai jo condition satisfy karte hain
+
+// console.log(nuuums.filter((nuuums)=> nuuums>11))
+
+// console.log(rresult);
+
+
+
+
+let numsss = [5, 12, 18, 25, 30];
+
+let resssult = numsss.find((numsss) => numsss > 20);
+
+// console.log(resssult);
+
+// find() first matching element return karta hai.
+
+
+let hnhn = [2, 4, 6, 8];
+
+// console.log(hnhn.some((num) => num > 5));
+// console.log(hnhn.every((num) => num > 5));
+
+// some() → kya kam se kam ek element condition satisfy karta hai? → true
+
+//every() → kya sabhi elements condition satisfy karte hain? → false
+
+
+let ii = [1, 2, 3];
+
+let resuuult = ii.push(4);
+
+// console.log(ii);
+// console.log(resuuult);
+
+//push() array ko modify karta hai, but push() return karta hai new array ki length.
+
+
+
+
+let numbers = [1, 2, 3, 4, 5, 6];
+
+let rrrr = numbers
+    .filter((numbers) => numbers % 2 === 0)
+    .map((numbers) => numbers * 10);
+
+// console.log(rrrr);
+
+
+
+let aka = [10, 20, 30, 40];
+
+let resulting = aka.reduce((acc, num) => {
+    return acc + num;
+}, 0);
+
+console.log(resulting);
+
+
+// 0 + 10 = 10
+// 10 + 20 = 30
+// 30 + 30 = 60
+// 60 + 40 = 100
+
+// reduce() ka use array ki values ko ek single result mein combine karne ke liye hota hai.
