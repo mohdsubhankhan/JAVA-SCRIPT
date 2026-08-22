@@ -92,7 +92,7 @@ sayHello()
      
       
  }
- console.log(square(8));
+//  console.log(square(8));
 
 
 
@@ -100,7 +100,7 @@ sayHello()
     return num1 * num2
     
  }
-    console.log(multiply(4,7));
+    // console.log(multiply(4,7));
 
 
 
@@ -209,5 +209,187 @@ function calculates (a,b, operation){
     }
      }
 
-     console.log(calculates(10,9, "multiply"));
+    //  console.log(calculates(10,9, "multiply"));
      
+
+
+
+
+    //  ************ this function   ***************
+
+
+    const studentss = {
+        name1 : "mr subhan khan",
+        age1 : 23,
+
+          sayHelloo: function()  { 
+            // console.log(`${this.name1}, welcome to the website`);
+            // console.log(`${this.age1}, welcome to the website`);
+            // console.log(this);
+        }
+    }
+    studentss.sayHelloo()
+
+
+    const person = {
+        name2 : "zainab khan",
+        age : 23,
+
+        welcomemsg : function () {
+            console.log(`${this.name2}, welcome to the website`);    
+        }
+    }
+    // person.welcomemsg()
+    // person.name2 ="mantasha khan"
+    // person.welcomemsg()
+
+
+    function chai (){
+        // console.log(this);  
+    }
+    chai()
+    
+
+    function hh (){
+        username : "subhan"
+        // console.log(this.username);   
+    }
+    hh()
+
+    const gg = function (){
+        username : "subhannn"
+        // console.log(this.username); 
+    }
+    gg()
+
+    // **************** arrow functions *************
+
+    const hhh =  () => {
+        username : "abc"
+        // console.log(this);
+        // console.log(this.username);
+        
+    }
+    hhh()
+
+    const fig = (num1, num2) => {
+        return num1 * num2             // explicit return
+    }
+    // console.log(fig(3, 8))
+
+
+
+    const gig = (num1, num2) =>  num1+num2   // imlicit return 
+    // console.log(gig(78,12));
+
+
+     const gigi = (num1, num2) =>  (num1-num2)   // 2 imlicit return 
+    // console.log(gigi(72,12));
+
+
+    const gggg = (num1,num2) => ({username : "subhan"})
+    // function me object 
+    // console.log(gggg(72,12));
+    
+
+
+    // **** (IIFE) immediately invoked function expression ****
+
+    (function ghg (){
+        // console.log(`DB CONNECTED`);
+    }) ();  // named iife
+    
+
+    ((name)=>{
+        // console.log(`DB CONNECTED TWO ${name}`)
+    })("SUBHAN")  // unnamed iife
+
+
+
+    
+
+    const adddd = function (a, b) {
+    return a + b;
+}
+// console.log(adddd(70,50));
+
+
+const addds = (a,b) => {
+    return a+b
+    } 
+    // console.log(addds(87,98));
+    
+
+ const ad = (a,b) => (a*b)
+//  console.log(ad(10,20));
+
+
+ const asss = (a,b) => a/b
+//  console.log(asss(10,2));
+ 
+ 
+
+
+    const personn = {
+    name: "Subhan",
+
+    greet: function() {
+        // console.log(this.name);
+    }
+};
+personn.greet();
+
+
+
+const car = {
+    brand: "BMW",
+
+    showBrand: function() {
+        // console.log(this);
+    }
+};
+// car.showBrand();
+
+
+
+const testss = () => {
+    return 10 + 20;
+};
+// console.log(testss());
+
+
+
+
+const calculator = {
+    a: 20,
+    b: 10,
+
+    add() {
+        return this.a + this.b;
+    },
+
+    subtract() {
+        return this.a - this.b
+    },
+
+    multiply() {
+        return this.a * this.b
+    }
+};
+
+console.log(calculator.add());       // 30
+console.log(calculator.subtract());  // 10
+console.log(calculator.multiply());  // 200
+
+
+const employee = {
+    name: "Subhan",
+    salary: 25000,
+
+    showdetails : function (){
+        console.log(`NAME: ${this.name}`);
+        console.log(`SALARY: ${this.salary}`);
+        
+    }
+};
+// employee.showdetails()
