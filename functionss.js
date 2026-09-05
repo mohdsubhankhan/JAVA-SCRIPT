@@ -155,7 +155,7 @@ let abc = "subhan mantasha"
 function abd(){
     // console.log(abc)
 }
-abd()   // it is work because abc is a global scope 
+abc()   // it is work because abc is a global scope 
 
 function testt (){
     let age = 23

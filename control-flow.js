@@ -68,7 +68,7 @@ if (role === "editor") {
 //  ***********   var is function-scoped. 
 // ****** var ka use nhi karna hai coz ye scope ke bahar bhi access ho sakta hai isliye 
 
-// ****  let & const are  block scoped  ye sirf scope {} ke anadr hi use hote hai bahar 
+// ****  let & const are  block scoped  ye sirf scope {} ke anadr hi use hote hai bahar nhi
 
 if (true){
     var name1 = "subhan"
